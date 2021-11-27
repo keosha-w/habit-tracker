@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Habits } from './components/habits';
+import { ApplicationViews } from './components/ApplicationViews';
+import { BrowserRouter } from 'react-router-dom';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <Habits />
+    <BrowserRouter>
+      <ApplicationViews />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

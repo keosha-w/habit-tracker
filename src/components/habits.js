@@ -1,12 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { ApplicationViews } from "./ApplicationViews";
+import { HabitForm } from "./Habits/HabitForm";
+import { NavBar } from "./nav/NavBar";
 import { UsersList } from "./users/usersList";
 
 export const Habits = () => {
 
-    return (
-        <>
-            <h1>Habit Tracker</h1>
-            <UsersList />
-        </>
-    )
+    <>
+        <NavBar />
+        <Route path="/">
+        <ApplicationViews />
+      </Route>
+    </>
+
 }
