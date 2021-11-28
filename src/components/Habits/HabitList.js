@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom"
-
+import { HabitForm } from "./HabitForm"
 
 export const HabitList = () => {
     const [habits, setHabits] = useState([])
@@ -22,19 +22,21 @@ export const HabitList = () => {
 
     return (
         <>    
-            <div>
-                
-            </div>   
             {
                 habits.map(
                     (habitObj) => {
                         return <h3 key={`habit--${habitObj.id}`}>
                             <div>{habitObj.title}</div>
-                            <div>{habitObj.description} every {habitObj.title} hours.</div>
+                            <div>{habitObj.description} every {habitObj.timeframe} day.</div>
                             </h3>
                     }
                 )
             }
+            <div>
+                <button onClick={
+                    () => history.push("/habits/create")
+                } >New</button>
+            </div>   
         </>
     )
 }
