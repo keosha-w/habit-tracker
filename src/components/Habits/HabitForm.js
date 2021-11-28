@@ -47,8 +47,9 @@ export const HabitForm = () => {
             })
     }
 
+    
    
- if (document.getElementById('recurring--habit') ) {
+ if (document.querySelector("#recurring--habit") ) {
      
      return (
          <form className="employee__app">
