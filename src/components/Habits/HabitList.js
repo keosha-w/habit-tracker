@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom"
-import { Link } from "react-router-dom";
-import { Route, Redirect } from "react-router-dom";
+
 
 export const HabitList = () => {
     const [habits, setHabits] = useState([])

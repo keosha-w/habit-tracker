@@ -1,16 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { ApplicationViews } from "./ApplicationViews";
-import { HabitForm } from "./Habits/HabitForm";
-import { NavBar } from "./nav/NavBar";
-import { UsersList } from "./users/usersList";
 
-export const Habits = () => {
+import { ApplicationViews } from "./ApplicationViews";
+
+import { NavBar } from "./nav/NavBar";
+
+
+export const Habits = () => (
 
     <>
-        <NavBar />
-        <Route path="/">
-        <ApplicationViews />
-      </Route>
+      <h1>Track A Habit</h1>
+      <NavBar />
+      <ApplicationViews />
     </>
 
-}
+)
