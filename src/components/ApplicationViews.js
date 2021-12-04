@@ -3,7 +3,7 @@ import { UsersList } from "./users/usersList"
 import { Route } from "react-router-dom";
 import { HabitForm } from "./Habits/HabitForm";
 import { DailyHabitList } from "./Habits/DailyHabits";
-
+import { Test } from "./Test/Test";
 //Responsibility: to determine which information should be displayed when the URL changes
 
 export const ApplicationViews = () => {
@@ -20,6 +20,9 @@ export const ApplicationViews = () => {
             </Route>
             <Route path="/habits/create">
                 <HabitForm />
+            </Route>
+            <Route path="/test">
+                <Test />
             </Route>
 
         </>
